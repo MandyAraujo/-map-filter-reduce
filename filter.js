@@ -20,4 +20,15 @@ const numerosFiltrados = numeros.filter(function(numero){
     }
 })
 
+const numerosFiltrados = numeros.filter(numero => numero % 2 === 0);
+
+
 console.log(numerosFiltrados);
+
+// utilizando map e filter juntos
+
+const arrayMapFilter = numeros  
+    .filter(numero => numero % 2 === 0)
+    .map (numero => numero * 2);
+
+console.log(arrayMapFilter)
